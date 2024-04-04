@@ -5,5 +5,11 @@ This is an edited version of VLLMs. The changes include:
 
 Setup:
 ```
-pip install https://github.com/thanhdath/vllm.git
+git clone git@github.com:thanhdath/vllm.git
+cd vllm/
+
+export CUDA_HOME=/usr/local/cuda
+export PATH="${CUDA_HOME}/bin:$PATH"
+
+pip install -e .
 ```
