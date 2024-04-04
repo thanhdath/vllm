@@ -149,7 +149,7 @@ class Detokenizer:
         seq.tokens.extend(new_tokens)
         seq.prefix_offset = prefix_offset
         seq.read_offset = read_offset
-        seq.output_text += new_decoded_token_text
+        seq.output_text = new_decoded_token_text
 
 
 def _convert_tokens_to_string_with_added_encoders(
